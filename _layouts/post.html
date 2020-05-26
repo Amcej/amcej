@@ -2,6 +2,13 @@
 layout: default
 ---
 <h1>{{ page.title }}</h1>
+<span>
+    <span class="post-date" style="display:inline-block;">{{ page.date | date_to_string }}</span> |
+    {% for tag in page.tags %}
+      <span class="codinfox-tag-mark">{{ tag }}</span>
+    {% endfor %}
+</span>
+
 <p class="meta">{{ page.date | date_to_string }}</p>
 
 <div class="post">
