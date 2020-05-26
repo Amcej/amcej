@@ -11,7 +11,7 @@ layout: feed
     <id>http://amcej.github.io/blog</id>
     <author>
         <name>Amcej.com web dev blog</name>
-        <email>radomirjecminek@gmail.com</email>
+        <email>jecminekradomir@gmail.com</email>
     </author>
 
     {% for post in site.posts %}
