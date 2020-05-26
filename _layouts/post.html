@@ -5,7 +5,7 @@ layout: default
 <span>
     <span class="post-date" style="display:inline-block;">{{ page.date | date_to_string }}</span> |
     {% for tag in page.tags %}
-      <span class="codinfox-tag-mark">{{ tag }}</span>
+       <a class="codinfox-tag-mark" href="/blog/tag/#{{ tag | slugify }}">#{{ tag }}</a>
     {% endfor %}
 </span>
 <div class="post">
