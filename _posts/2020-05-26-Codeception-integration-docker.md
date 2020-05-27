@@ -1,13 +1,13 @@
 ---
 layout: default
 title: "Codeception and webdriver integration"
-tags: [codeception, selenium, chromedriver, docker, acceptance-tests]
+tags: [codeception, selenium, chromedriver, docker, acceptance-tests, tests]
 date: 2020-05-26
 time: 11:24
 ---
 # Codeception and webdriver integration
 
-Just some note 
+Just some notes
 
 ## Install codeception
  
