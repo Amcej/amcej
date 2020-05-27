@@ -1,11 +1,13 @@
 ---
 layout: default
-title: "Integrace codeception + selenium wedriver v dockeru"
+title: "Codeception and webdriver integration"
 tags: [codeception, selenium, chromedriver, docker, acceptance-tests]
 date: 2020-05-26
 time: 11:24
 ---
 # Codeception and webdriver integration
+
+Just some note 
 
 ## Install codeception
  
@@ -18,14 +20,8 @@ composer require codeception/codeception --dev
 ```
 call vendor/bin/codecept bootstrap
 ```
->  Next steps:
->   1. Edit tests/acceptance.suite.yml to set url of your application. Change PhpBrowser to WebDriver to enable >browser testing
->   2. Edit tests/functional.suite.yml to enable a framework module. Remove this file if you don't use a framework
->   3. Create your first acceptance tests using codecept g:cest acceptance First
->   4. Write first test in tests/acceptance/FirstCest.php
->   5. Run tests using: codecept run
 
-## Some other setup
+## Codeception vs docker setup
 If running from docker use container's name in config.
 
  Set projects url in tests/acceptance.suite.yml: 
@@ -34,8 +30,8 @@ actor: AcceptanceTester
 modules:
     enabled:
         - WebDriver:
-            url: http://front
-            host: selenium
+            url: http://front -- "front" as docker service name
+            host: selenium    -- "selenium" as docker service name
             browser: chrome
         - \Helper\Acceptance
     step_decorators: ~
