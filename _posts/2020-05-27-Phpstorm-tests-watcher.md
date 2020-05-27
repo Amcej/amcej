@@ -15,7 +15,7 @@ Want to run this CMD:
  docker exec -w /var/www/ front php /var/www/codecept.phar run -vvv --no-redirect
 ```
 
-Phpstorm watcher setting:
+# Phpstorm watcher setting:
 
 ![phpstorm-watcher-setup.png](/assets/images/phpstorm-watcher-setup.png)
 
